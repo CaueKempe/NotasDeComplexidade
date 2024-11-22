@@ -11,7 +11,7 @@ function calcularPontuacao(campos) {
     };
 
     // Mapas de pontuação
-    const nivelDesenvolvedorMap = { 1: 100, 2: 75, 3: 50, 4: 25 };
+    const nivelDesenvolvedorMap = { 1: 25, 2: 50, 3: 75, 4: 100 };
     const tipoTarefaMap = { 1: 100, 2: 80, 3: 60, 4: 50, 5: 40 };
     const familiaridadeMap = { alto: 33, medio: 66, baixo: 100 };
 
