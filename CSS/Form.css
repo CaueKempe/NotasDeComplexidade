@@ -1,0 +1,104 @@
+body {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #282A36;
+    color: white;
+}
+
+.container {
+    background-color: #44475A;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    border-bottom: 2px solid #666;
+    padding-bottom: 20px;
+}
+
+.footer-group {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.pontuacao-preview {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-left: 20px;
+    color: #50FA7B;
+}
+
+label {
+    display: inline-block;
+    margin-bottom: 5px;
+    margin-right: 10px;
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+    
+}
+
+h2{
+    color: #FF79C6;
+
+}
+
+/* Remove setas dos inputs type="number" */
+input[type="number"]::-webkit-inner-spin-button, 
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+    
+}
+
+input[type="number"] {
+    -moz-appearance: textfield; /* Para navegadores baseados em Firefox */
+    outline-color: #8BE9FD;
+    color: white;
+    background-color: #6272A4;
+    border: 1px solid #F8F8F2;
+    width: 2rem;
+    text-align: center;
+}
+
+
+button {
+    background-color: #50FA7B;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #666;
+    margin: 20px 0;
+}
+
+.title{
+    color: #FFB86C;
+
+}

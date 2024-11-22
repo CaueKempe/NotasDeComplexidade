@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nota de Complexidade</title>
+    <link rel="stylesheet" href="CSS/Form.css">  
+</head>
+<body>
+    <div class="container">
+        <h2>Nota de Complexidade</h2>
+        <form id="formulario">
+            <div class="form-group">
+                <label class="title" for="nivel">1. Nível do Desenvolvedor:</label><br>
+                <div class="input-container">
+                    <input type="radio" id="estagiario" name="nivel" value="4" required>
+                    <label for="estagiario">Estagiário</label><br>
+                </div>
+                <div class="input-container">
+                    <input type="radio" id="junior" name="nivel" value="3">
+                    <label for="junior">Júnior</label><br>
+                </div>
+                <div class="input-container">
+                    <input type="radio" id="pleno" name="nivel" value="2">
+                    <label for="pleno">Pleno</label><br>    
+                </div>
+                <div class="input-container">
+                    <input type="radio" id="senior" name="nivel" value="1">
+                    <label for="senior">Sênior</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="title" for="tarefa">2. Tipo de Tarefa:</label><br>
+                <div class="input-container">
+                  <input type="radio" id="desenvolvimento" name="tarefa" value="1" required>
+                   <label for="desenvolvimento">Desenvolvimento de nova funcionalidade</label><br>
+                </div>
+                <div class="input-container">
+                    <input type="radio" id="correcao" name="tarefa" value="2">
+                    <label for="correcao">Correção de bug</label><br>
+                </div>
+                <div class="input-container">
+                    <input type="radio" id="refatoracao" name="tarefa" value="3">
+                    <label for="refatoracao">Refatoração de código</label><br>
+                </div>
+                <div class="input-container">
+                    <input type="radio" id="testes" name="tarefa" value="4">
+                    <label for="testes">Implementação de testes</label><br>
+                </div>
+                <div class="input-container">
+                    <input type="radio" id="documentacao" name="tarefa" value="5">
+                    <label for="documentacao">Documentação</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="title">3. Interações:</label><br>
+                <label for="api">Integração com APIs externas?</label><br>
+                <div class="input-container">
+                    <input type="radio" id="api-sim" name="api" value="1" required>
+                    <label for="api-sim">Sim</label>
+                    <input type="radio" id="api-nao" name="api" value="0">
+                    <label for="api-nao">Não</label><br>
+                </div><br>
+                <label for="banco">Integração com banco de dados?</label><br>
+                <div class="input-container">
+                    <input type="radio" id="banco-sim" name="banco" value="1" required>
+                    <label for="banco-sim">Sim</label>
+                    <input type="radio" id="banco-nao" name="banco" value="0">
+                    <label for="banco-nao">Não</label><br>
+                </div><br>
+                <label for="interface">Interface com o usuário?</label><br>
+                <div class="input-container">
+                    <input type="radio" id="interface-sim" name="interface" value="1" required>
+                    <label for="interface-sim">Sim</label>
+                    <input type="radio" id="interface-nao" name="interface" value="0">
+                    <label for="interface-nao">Não</label>
+                </div><br>
+            </div>
+
+            <div class="form-group">
+                <label class="title" for="familiaridade">4. Familiaridade com a Tecnologia:</label><br>
+                <div class="input-container">
+                    <input type="radio" id="familiaridade-alto" name="familiaridade" value="alto">
+                    <label for="familiaridade-alto">Alto</label><br>
+            
+                    <input type="radio" id="familiaridade-medio" name="familiaridade" value="medio">
+                    <label for="familiaridade-medio">Médio</label><br>
+            
+                    <input type="radio" id="familiaridade-baixo" name="familiaridade" value="baixo">
+                    <label for="familiaridade-baixo">Baixo</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="title" for="novas-tecnologias">5. Novas tecnologias/bibliotecas?</label><br>
+                <div class="input-container">
+                    <input type="radio" id="tecnologias-sim" name="novas-tecnologias" value="1" required>
+                    <label for="tecnologias-sim">Sim</label>
+                    <input type="radio" id="tecnologias-nao" name="novas-tecnologias" value="0">
+                    <label for="tecnologias-nao">Não</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="title" for="requisitos">Número de Requisitos:</label>
+                <input type="number" id="requisitos" name="requisitos" min="0" required>
+            </div>
+            
+            <div class="title" class="form-group">
+                <label for="horas">Horas Estimadas:</label>
+                <input type="number" id="horas" name="horas" step="0.1" min="0" required>
+            </div>
+            
+            <div class="footer-group">
+                <button type="submit">Enviar</button>
+                <div id="previewPontuacao" class="pontuacao-preview">Pontuação: 0</div>
+            </div>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
